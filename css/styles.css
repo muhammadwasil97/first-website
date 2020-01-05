@@ -1,0 +1,29 @@
+html body{
+    background: black;
+}
+.navbar {
+    background: none;
+    min-height: 70px;
+    z-index: 1;
+}
+.navbar .navbar-brand {
+    color: floralwhite;
+    font-size: 200%;
+    font-weight: bolder;
+}
+
+.navbar .navbar-nav .nav-item .nav-link{
+    color: whitesmoke;
+    font-size: 120%;
+}
+
+#fader{
+    height: 770px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: absolute; 
+    left: 0;
+    top: 0;
+    z-index: -1;
+}

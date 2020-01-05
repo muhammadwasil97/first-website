@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">My Events</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav navbar ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="fader"></div>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script>
+            $(window).ready(function(){
+                var image = ["../images/image3.jpg","../images/image5.jpg", "../images/image6.jpg"];
+                var i = 0;
+                $("#fader").css("background-image","linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("+image[i]+")");
+                setInterval(function(){
+                    $("#fader").fadeOut(500,function(){
+                        $("#fader").css("background-image","linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("+image[i++]+")");
+                        $("#fader").fadeIn(500);
+                    });
+                    if(i == image.length)
+                        i = 0;
+                }, 5000);
+            });
+        </script>
+    </body>
+</html>

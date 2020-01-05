@@ -1,0 +1,29 @@
+{
+  "name": "first-website",
+  "version": "1.0.0",
+  "description": "first website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhammadwasil97/first-website.git"
+  },
+  "author": "Muhammad Wasil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muhammadwasil97/first-website/issues"
+  },
+  "homepage": "https://github.com/muhammadwasil97/first-website#readme",
+  "devDependencies": {
+    "bootstrap": "^4.4.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "lite-server": "^2.5.4",
+    "popper.js": "^1.16.0"
+  },
+  "dependencies": {}
+}
