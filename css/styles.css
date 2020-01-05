@@ -22,8 +22,19 @@ html body{
     width: 100%;
     background-repeat: no-repeat;
     background-position: center top;
-    position: absolute; 
+    position: relative; 
     left: 0;
     top: 0;
     z-index: -1;
+}
+
+.wel {
+    text-align: center;
+    color: floralwhite;
+    height: 150px;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 17%;
+    left: 17%;
 }
