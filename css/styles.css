@@ -1,10 +1,14 @@
-html body{
-    background: black;
-}
 .navbar {
     background: none;
     min-height: 70px;
     z-index: 1;
+    transition: ease-in-out 0.6s;
+}
+.navbar.scrolled1 {
+    background: blue;
+}
+.navbar.scrolled2 {
+    background: darkcyan;
 }
 .navbar .navbar-brand {
     color: floralwhite;
@@ -37,4 +41,8 @@ html body{
     top: 30%;
     right: 17%;
     left: 17%;
+}
+
+.card {
+    margin-top: 20%;
 }

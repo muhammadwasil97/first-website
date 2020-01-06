@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-sm fixed-top">
             <a class="navbar-brand" href="#">My Events</a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav navbar ml-auto">
@@ -39,25 +39,31 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/image3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
                 </div>
-                <div class="col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/image4.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
                 </div>
-              </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/image6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
         </div>
         <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
         <script src="node_modules/jquery/dist/jquery.js"></script>
@@ -68,6 +74,7 @@
                 var image = ["../images/image3.jpg","../images/image5.jpg", "../images/image6.jpg"];
                 var i = 0;
                 $("#fader").css("background-image","linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("+image[i]+")");
+                i++;
                 setInterval(function(){
                     $("#fader").fadeOut(500,function(){
                         $("#fader").css("background-image","linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("+image[i++]+")");
@@ -76,6 +83,10 @@
                     if(i == image.length)
                         i = 0;
                 }, 5000);
+            });
+            $(window).scroll(function(){
+	            $('nav').toggleClass('scrolled1', $(this).scrollTop() > 25);
+                $('nav').toggleClass('scrolled2', $(this).scrollTop() > 50);                
             });
         </script>
     </body>
