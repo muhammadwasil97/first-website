@@ -1,15 +1,20 @@
+html body {
+    background: white;
+}
+#index {
+    background: black;
+}
 .navbar {
     background: none;
     min-height: 70px;
     z-index: 1;
     transition: ease-in-out 0.6s;
 }
-.navbar.scrolled1 {
-    background: blue;
+.navbar.scrolled {
+    background: dodgerblue;
+    box-shadow: 0px 1px grey;
 }
-.navbar.scrolled2 {
-    background: darkcyan;
-}
+
 .navbar .navbar-brand {
     color: floralwhite;
     font-size: 200%;
@@ -22,7 +27,7 @@
 }
 
 #fader{
-    height: 770px;
+    height: 780px;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center top;
@@ -42,7 +47,24 @@
     right: 17%;
     left: 17%;
 }
+.wel h1 {
+    font-weight: bolder;
+}
 
 .card {
     margin-top: 20%;
+}
+.whitebck {
+    background-image: url("../images/white.jpg");
+    height: 770px;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 780px;
+    z-index: -1;
+}
+.mimage {
+    height: 200px;
+    width: 200px;
 }

@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
-    <body>
+    <body id="index">
         <nav class="navbar navbar-expand-sm fixed-top">
             <a class="navbar-brand" href="#">My Events</a>
             <div class="collapse navbar-collapse">
@@ -18,10 +18,10 @@
                         <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="#">Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Our Services</a>
+                        <a class="nav-link" href="#">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact Us</a>
@@ -38,28 +38,45 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Natoque penatibus et magnis dis parturient montes nascetur ridiculus. In hac habitasse platea dictumst vestibulum rhoncus est. Sollicitudin nibh sit amet commodo. Purus in massa tempor nec feugiat nisl pretium. Iaculis urna id volutpat lacus. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero nunc. Scelerisque mauris pellentesque pulvinar pellentesque. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. In egestas erat imperdiet sed euismod nisi. Vitae auctor eu augue ut lectus arcu bibendum. Egestas sed sed risus pretium quam vulputate dignissim. Lorem ipsum dolor sit amet consectetur adipiscing elit ut. Laoreet id donec ultrices tincidunt arcu non. Leo in vitae turpis massa sed elementum tempus egestas sed. Nulla facilisi etiam dignissim diam quis enim. Sit amet venenatis urna cursus eget nunc scelerisque. Purus semper eget duis at tellus at urna. Eu tincidunt tortor aliquam nulla facilisi cras.</p>
                 </div>
             </div>
+        </div>
+        <div class="whitebck">
+        </div>
+        <div class="container">
             <div class="row">
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="images/image3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="col-12 mymedia">
+                    <div class="media mt-5">
+                        <img class="mr-3 mimage align-self-center" src="images/bcake.jpg" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h1 class="mt-0">Media heading</h1>
+                            <p>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            </p>
                         </div>
                       </div>
                 </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="images/image4.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <div class="row">
+                <div class="col-12 mymedia">
+                    <div class="media mt-5">
+                        <div class="media-body">
+                            <h1 class="mt-0">Media heading</h1>
+                            <p>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            </p>
                         </div>
-                      </div>
+                        <img class="ml-3 mimage align-self-center" src="images/yatch.jpg" alt="Generic placeholder image">
+                    </div>
                 </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="images/image6.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <div class="row">
+                <div class="col-12 mymedia">
+                    <div class="media mt-4">
+                        <img class="mr-3 mimage align-self-center" src="images/image1.jpg" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h1 class="mt-0">Media heading</h1>
+                            <p>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            </p>
                         </div>
                       </div>
                 </div>
@@ -68,7 +85,7 @@
         <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
         <script src="node_modules/jquery/dist/jquery.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
         <script>
             $(window).ready(function(){
                 var image = ["../images/image3.jpg","../images/image5.jpg", "../images/image6.jpg"];
@@ -83,11 +100,11 @@
                     if(i == image.length)
                         i = 0;
                 }, 5000);
+                $(window).scroll(function(){
+                    $('nav').toggleClass('scrolled', $(this).scrollTop() > 100);                
+                });
             });
-            $(window).scroll(function(){
-	            $('nav').toggleClass('scrolled1', $(this).scrollTop() > 25);
-                $('nav').toggleClass('scrolled2', $(this).scrollTop() > 50);                
-            });
+            
         </script>
     </body>
 </html>
