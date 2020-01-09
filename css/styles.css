@@ -56,7 +56,7 @@ html body {
 }
 .whitebck {
     background-image: url("../images/white.jpg");
-    height: 770px;
+    height: 1500px;
     width: 100%;
     background-repeat: no-repeat;
     position: absolute;
@@ -67,4 +67,10 @@ html body {
 .mimage {
     height: 200px;
     width: 200px;
+}
+.row-content {
+    margin: 20px;
+}
+.serv {
+    height: 600px;
 }
